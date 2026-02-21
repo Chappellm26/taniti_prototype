@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taniti Island</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+      <nav role="navigation">
+        <div class="nav-child">
+          <h3 class="logo"><a href="../index.html">TANITI</a></h3>
+        </div>
+        <div class="nav-child">
+          <a href="../index.html">Home</a>
+          <a href="/pages/accommodations.html">Accommodations</a>
+          <a href="/pages/entertainment.html">Entertainment</a>
+          <a href="/pages/transportation.html">Transportation</a>
+          <a href="../index.html#bottom-section">FAQ</a>
+          <i class="fa fa-bars" title="button to open navigation" onclick="on()"></i>
+      </nav>
+  </header>
+
+  <div id="overlay">
+  <div class="icon-container">
+    <i class="fa fa-times" title="button to close navigation" onclick="off()"></i>
+  </div>
+  <div class="overlay-text">
+    <a href="../index.html">Home</a>
+    <a href="/pages/accommodations.html">Accommodations</a>
+    <a href="/pages/entertainment.html">Entertainment</a>
+    <a href="/pages/transportation.html">Transportation</a>
+    <a href="/pages/contact.html">Plan Your Trip</a>
+    <a href="../index.html#bottom-section">FAQ</a>
+  </div>
+  </div>
+
+  <section>
+    <div class="hero-container">
+      <div class="hero-image" role="img" aria-label="Island resort beach view">
+      <div class="hero-text">
+        <h3>Accommodations</h3>
+      </div>
+        <a href="/pages/contact.html" class="hero-button">Plan Your Trip</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-content">
+    <div class="card-container">
+      <div class="card accommodation-card-1">
+        <h3 class="card-title">Beach Resort</h3>
+        <p class="hidden-text">Click the button below to book your stay at Taniti's four-star resort.</p>
+        <button class="card-button"><a href="/pages/accommodations.html">Learn More</a></button>
+      </div>
+      <div class="card accommodation-card-2">
+        <h3 class="card-title">Beach Hotel</h3>
+        <p class="hidden-text">Click the button below to book your stay at Taniti's one of many beach hotels.</p>
+        <button class="card-button"><a href="/pages/accommodations.html">Learn More</a></button>
+      </div>
+      <div class="card accommodation-card-3">
+        <h3 class="card-title">Local Hotel</h3>
+        <p class="hidden-text">There are many small, family-owned hotels and a growing number of bed and breakfasts.</p>
+        <button class="card-button"><a href="/pages/accommodations.html">Learn More</a></button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="column">
+        <h3 class="logo"><a href="../index.html">TANITI</a></h3>
+      </div>
+      <div class="column">
+        <h5>Conact Info</h5>
+        <p><strong>Address: </strong>123 Main Street<br>Merriton Landing, Taniti</p>
+        <p><strong>Email: </strong>taniti@email.mail</p>
+        <p><strong>Phone: </strong>1-123-456-7890</p>
+      </div>
+      <div class="column">
+        <h5>Social Media</h5>
+        <ul class="social-icons">
+          <li class="fa fa-facebook"></li>
+          <li class="fa fa-twitter"></li>
+          <li class="fa fa-instagram"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="credits">
+      <p><strong>Photo Credits:</strong></p>
+      <p> [1] MickeyLIT (September 12, 2023). Island Logo. https://pixabay.com/vectors/ai-generated-palm-tree-sea-sunset-8249557/ </p>
+      <p> [2] kmarius (March 31, 2022). Island resort. https://pixabay.com/photos/thailand-island-resort-destination-7102595/</p>
+      <p> [3] romaneau (March 10, 2015). Beach resort. https://pixabay.com/photos/beach-resort-jetty-pier-boardwalk-666122/ </p>
+      <p> [4] texcosa (February 17, 2021). Beach hotel. https://pixabay.com/photos/beach-hotel-resort-island-6026018/ </p>
+      <p> [5] camansam (October 11, 2015). Island hotel. https://pixabay.com/photos/jeju-island-haevichi-hotel-garden-978991/ </p>
+    </div> 
+     
+  </footer>
+  <script>
+
+    function on() {
+        const turnOn = document.getElementById("overlay");
+        turnOn.style.display = "block";
+        turnOn.classList.add("fade-in");
+
+        const overflow = document.querySelector("body");
+        overflow.style.overflow = "hidden";
+    }
+
+    function off() {
+        const turnOff = document.getElementById("overlay");
+        turnOff.style.display = "none";
+
+        const overflow = document.querySelector("body");
+        overflow.style.overflow = "";
+    }
+
+    const nav = document.querySelector("nav");
+
+  </script>
+</body>
+</html>

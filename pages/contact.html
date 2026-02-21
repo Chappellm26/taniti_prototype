@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taniti Island</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+      <nav role="navigation">
+        <div class="nav-child">
+          <h3 class="logo"><a href="../index.html">TANITI</a></h3>
+        </div>
+        <div class="nav-child">
+          <a href="../index.html">Home</a>
+          <a href="/pages/accommodations.html">Accommodations</a>
+          <a href="/pages/entertainment.html">Entertainment</a>
+          <a href="/pages/transportation.html">Transportation</a>
+          <a href="../index.html#bottom-section">FAQ</a>
+          <i class="fa fa-bars" title="button to open navigation" onclick="on()"></i>
+      </nav>
+  </header>
+
+  <div id="overlay">
+  <div class="icon-container">
+    <i class="fa fa-times" title="button to close navigation" onclick="off()"></i>
+  </div>
+  <div class="overlay-text">
+    <a href="../index.html">Home</a>
+    <a href="/pages/accommodations.html">Accommodations</a>
+    <a href="/pages/entertainment.html">Entertainment</a>
+    <a href="/pages/transportation.html">Transportation</a>
+    <a href="/pages/contact.html">Plan Your Trip</a>
+    <a href="../index.html#bottom-section">FAQ</a>
+  </div>
+  </div>
+
+  <section>
+    <div class="hero-container">
+      <div class="hero-image" role="img" aria-label="Island resort beach view">
+      <div class="hero-text">
+        <h3>Plan Your Trip</h3>
+      </div>
+        <a href="/pages/contact.html" class="hero-button">Plan Your Trip</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-content">
+    <form>
+      <div class="form-group">
+        <label for="name">First Name:</label> 
+        <input type="text" name="name" id="name">
+
+        <label for="name">Last Name:</label> 
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label> 
+        <input type="tel" name="phone" id="phone">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label> 
+        <input type="email" name="email" id="email" required>
+
+        <label for="confirm">Confirm Email</label>
+        <input type="email" name="confirm" id="confirm" onblur="confirmEmail()" required>
+      </div>
+      <div class="form-group">
+        <label for="travel">Travel Dates</label>
+        <br>
+        <input type="date" id="travel" name="travel"> - <input type="date" id="travel" name="travel">
+        <br>
+      </div>
+      <div class="form-buttons">
+          <input type="submit" name="submitBtn" id="submitBtn" value="Submit Form">
+      </div>       
+    </form>
+    <div class="contact-info">
+      <h3 class="contact-info-title">About Taniti</h3>
+        <p>Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square miles, the terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small, active volcano. Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most the Tanitian economy was dominated by fishing or agriculture.</p>
+    </div>
+    <script type="text/javascript">
+        function confirmEmail() {
+            var email = document.getElementById("email").value
+            var confemail = document.getElementById("confirm").value
+            if(email != confemail) {
+                alert('Email Not Matching!');
+            }
+        }
+    </script>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="column">
+        <h3 class="logo"><a href="../index.html">TANITI</a></h3>
+      </div>
+      <div class="column">
+        <h5>Conact Info</h5>
+        <p><strong>Address: </strong>123 Main Street<br>Merriton Landing, Taniti</p>
+        <p><strong>Email: </strong>taniti@email.mail</p>
+        <p><strong>Phone: </strong>1-123-456-7890</p>
+      </div>
+      <div class="column">
+        <h5>Social Media</h5>
+        <ul class="social-icons">
+          <li class="fa fa-facebook"></li>
+          <li class="fa fa-twitter"></li>
+          <li class="fa fa-instagram"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="credits">
+      <p><strong>Photo Credits:</strong></p>
+      <p> [1] MickeyLIT (September 12, 2023). Island Logo. https://pixabay.com/vectors/ai-generated-palm-tree-sea-sunset-8249557/ </p>
+      <p> [2] kmarius (March 31, 2022). Island resort. https://pixabay.com/photos/thailand-island-resort-destination-7102595/</p>
+    </div> 
+     
+  </footer>
+  <script>
+
+    function on() {
+        const turnOn = document.getElementById("overlay");
+        turnOn.style.display = "block";
+        turnOn.classList.add("fade-in");
+
+        const overflow = document.querySelector("body");
+        overflow.style.overflow = "hidden";
+    }
+
+    function off() {
+        const turnOff = document.getElementById("overlay");
+        turnOff.style.display = "none";
+
+        const overflow = document.querySelector("body");
+        overflow.style.overflow = "";
+    }
+
+    const nav = document.querySelector("nav");
+
+  </script>
+</body>
+</html>
