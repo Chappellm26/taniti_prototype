@@ -52,7 +52,7 @@ a {
 }
 
 .hero-image {
-    background-image: url("/images/island_resort.jpg");
+    background-image: url("../images/island_resort.jpg");
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -85,7 +85,7 @@ a {
 }
 
 .logo {
-    background-image: url("/images/island_logo.png");
+    background-image: url("../images/island_logo.png");
     background-size: 50px;
     background-repeat: no-repeat;
     position: relative;
@@ -306,72 +306,72 @@ a:hover {
 }
 
 .accommodation-card {
-    background-image: url("/images/beach_resort.jpg");
+    background-image: url("../images/beach_resort.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .entertainment-card {
-    background-image: url("/images/zipline.jpg");
+    background-image: url("../images/zipline.jpg");
     background-size: cover;
     background-position: center;
 }
 .transportation-card {
-    background-image: url("/images/boat_image.jpg");
+    background-image: url("../images/boat_image.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .accommodation-card-1 {
-    background-image: url("/images/beach_resort.jpg");
+    background-image: url("../images/beach_resort.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .accommodation-card-2 {
-    background-image: url("/images/beach_hotel.jpg");
+    background-image: url("../images/beach_hotel.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .accommodation-card-3 {
-    background-image: url("/images/local_hotel.jpg");
+    background-image: url("../images/local_hotel.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .entertainment-card-1 {
-    background-image: url("/images/snorkeling.jpg");
+    background-image: url("../images/snorkeling.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .entertainment-card-2 {
-    background-image: url("/images/zipline.jpg");
+    background-image: url("../images/zipline.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .entertainment-card-3 {
-    background-image: url("/images/volcano.jpg");
+    background-image: url("../images/volcano.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .transportation-card-1 {
-    background-image: url("/images/bus.jpg");
+    background-image: url("../images/bus.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .transportation-card-2 {
-    background-image: url("/images/airport.jpg");
+    background-image: url("../images/airport.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .transportation-card-3 {
-    background-image: url("/images/cruise_ship.jpg");
+    background-image: url("../images/cruise_ship.jpg");
     background-size: cover;
     background-position: center;
 }
